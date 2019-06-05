@@ -99,6 +99,9 @@ h1 {
 .section-two-content {
     display: flex;
     height: auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-left: 10%;
 }
 
 .section-two-content img {

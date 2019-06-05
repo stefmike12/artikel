@@ -1,244 +1,75 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    color: #1A1A1A;
 }
 
-img {
+/* img {
     height: 100%;
     width: auto;
+} */
+
+.logo {
+    position: fixed;
 }
 
-p {
-    max-width: 40rem;
-    color: white;
-    font-family: 'athelas', sans-serif;
-    padding: 20px;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 200;
+.logo img {
+    width: auto;
+    height: 3rem;
+    margin: 5rem;
 }
+
 h1 {
-    font-family: 'avenir next condensed', sans-serif;
-    text-transform: uppercase;
+    font-size: 2.8rem;
+    font-family: poynter-oldstyle-display, serif;
     color: white;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    max-width: 35rem;
+    font-weight: 100;
+    font-style: normal;
+    padding-bottom: 18px;
 }
 
 h2 {
-    font-family: 'avenir next condensed', sans-serif;
+    font-size: 0.8rem;
+    font-family: europa, sans-serif;
     text-transform: uppercase;
     color: white;
-    font-weight: 600;
-    max-width: 35rem;
-    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    padding-bottom: 10px;
+
 }
 
-.section-one {
+p {
+    font-family: poynter-oldstyle-display,serif;
+    font-size: 1rem;
+    color: white;
+    max-width: 32rem;
+    line-height: 1.6rem;
+}
+
+.intro {
     height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-
-        background-image: url('images/gradient.png'),
-        url('images/train_old.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-}
-
-.section-one-content {
-    position: absolute;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.section-one-content img {
-    height: auto;
-}
-
-.section-one-content h1 {
-    margin-bottom: 100px;
-    text-shadow: 0px 0px 100px rgb(0, 0, 0);
-    text-shadow: 0px 0px 100px rgb(0, 0, 0);
-    text-shadow: 0px 0px 100px rgb(0, 0, 0);
-}
-
-.section-one-content h1 {
-    animation: 2000ms arrow infinite;
-    transition: 1000ms;
-}
-
-
-@keyframes arrow {
-    0% {
-        padding: 2px 0px;
-    }
-
-        30% {
-            padding: 40px 0px;
-        }
-}
-
-.section-two {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('images/gradient.png'),
-    url('images/train.png');
+    background-image: url('images/motor.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-.section-two-content {
     display: flex;
-    height: auto;
+    align-items: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
-    overflow: hidden;
-    justify-content: center;
 }
 
-.section-two-content h2 {
-    margin-left: 10%;
-    margin-right: 10%;
+.intro_left, .intro_right {
+    padding: 5rem;
 }
 
-.section-two-content img {
-    margin: 1rem;
-width: 100%;
-    /* max-height: 25rem; */
-}
-
-.section-three {
-    height: 100vh;
-    width: 100%;
+.show_more {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-image: url('images/gradient.png'), url('videos/road.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    text-align: right;
+    align-items: baseline;
 }
 
-.section-three-content h2, p {
-    margin-left: 10%;
-    margin-right: 10%;
+.arrow {
+    border: solid 2px white;
+    border-radius: 50px;
+    padding: 1px 5px;
+    margin-right: 10px;
 }
-
-.section-three-content img {
-    max-height: 30rem;
-}
-
-
-/* .section-one-background {
-    position: relative;
-    padding: 3rem 0px;
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-
-.section-one-background {
-    position: relative;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.section-one-content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.733);
-    color: #fff;
-    transition: opacity .2s, visibility .2s;
-    opacity: 0;
-    font-family: 'montserrat', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
-    padding-left: 30px;
-} */
-
-/* .h1-1 {
-    font-family: 'avenir next condensed';
-    text-transform: uppercase;
-    color: white;
-    font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 2.9rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-        background-image: url(images/train.png);
-        background-size: cover;
-        background-position: center;
-}
-
-.h1-2 {
-    font-family: 'avenir next condensed';
-    text-transform: uppercase;
-    color: white;
-    font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 2.9rem;
-
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgba(0, 0, 0, 0.445);
-    padding: 20px;
-}
-
-.content-h1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-
-video {
-    height: 100vh;
-    display: flex;
-}
-
-.video-container{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    display: flex;
-    margin: -10px 0;
-} */

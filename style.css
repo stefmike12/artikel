@@ -23,7 +23,7 @@ p {
     font-weight: 200;
 }
 h1 {
-    font-family: 'avenir next condensed';
+    font-family: 'avenir next condensed', sans-serif;
     text-transform: uppercase;
     color: white;
     font-weight: 600;

@@ -101,13 +101,21 @@ h1 {
     height: auto;
     flex-wrap: wrap;
     overflow: hidden;
+    justify-content: center;
+}
+
+.section-two-content h1 {
     margin-left: 10%;
+    margin-right: 10%;
 }
 
 .section-two-content img {
     max-height: 30rem;
 }
 
+.section-three-content h1 {
+    margin-left: 10%;
+}
 
 .section-three {
     height: 100vh;

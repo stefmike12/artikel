@@ -20,11 +20,14 @@
 
 h1 {
     font-size: 2.8rem;
-    font-family: poynter-oldstyle-display, serif;
+    /* font-family: poynter-oldstyle-display, sans-serif; */
+    font-family: avenir next condensed, sans-serif;
+    text-transform: uppercase;
     color: white;
-    font-weight: 100;
+    line-height: 3rem;
+    font-weight: 600;
     font-style: normal;
-    padding-bottom: 18px;
+    padding-bottom: 16px;
 }
 
 h2 {
@@ -72,4 +75,46 @@ p {
     border-radius: 50px;
     padding: 1px 5px;
     margin-right: 10px;
+}
+
+.section_one {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(24, 24, 24);
+    overflow: hidden;
+}
+
+.section_one img {
+    max-height: 400px;
+    width: auto;
+}
+
+.section_two {
+    height: 200vh;
+    background-image: url('images/train_old.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding-top: 25rem;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(24, 24, 24);
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 650px) {
+    .intro_left,
+    .intro_right {
+        padding: 2rem;
+    }
+
+    .logo img {
+        width: auto;
+        margin: 2rem;
+    }
 }

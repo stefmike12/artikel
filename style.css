@@ -1,6 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    
+}
+
+body {
+        background-color: rgb(24, 24, 24);
 }
 
 /* img {
@@ -10,6 +15,7 @@
 
 .logo {
     position: fixed;
+    z-index: 100;
 }
 
 .logo img {
@@ -92,9 +98,9 @@ p {
     width: auto;
 }
 
-.section_two {
-    height: 200vh;
-    background-image: url('images/train_old.jpg');
+.section_three {
+    height: 100vh;
+    background-image: url('images/gradient.png'), url('images/train_old.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,6 +111,39 @@ p {
     flex-wrap: wrap;
     background-color: rgb(24, 24, 24);
     overflow: hidden;
+    padding-top: 0px;
+}
+
+.section_three p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.section_video {
+    margin: -5em 0em;
+    -webkit-clip-path: inset(15% 0px 15% 0px);
+    clip-path: inset(15% 0px 15% 0px);
+    display: block;
+    overflow: hidden;
+}
+
+.video1 {
+        width: 100%;
+}
+
+.section_two {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    background-color: rgb(24, 24, 24);
+    overflow: hidden;
+}
+
+.section_two img {
+    max-height: 400px;
+    width: auto;
 }
 
 @media only screen and (max-width: 650px) {

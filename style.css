@@ -120,9 +120,8 @@ p {
 }
 
 .section_video {
-    margin: -5em 0em;
-    -webkit-clip-path: inset(15% 0px 15% 0px);
-    clip-path: inset(15% 0px 15% 0px);
+    -webkit-clip-path: inset(20% 0px 20% 0px);
+    clip-path: inset(20% 0px 20% 0px);
     display: block;
     overflow: hidden;
 }

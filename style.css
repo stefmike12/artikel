@@ -5,7 +5,8 @@
 }
 
 body {
-        background-color: #181618;
+        /* background-color: #181618; */
+        background-color: black;
 }
 
 /* img {
@@ -57,7 +58,7 @@ p {
 
 .intro {
     height: 100vh;
-    background-image: url('images/motor.jpg');
+    background-image: url('images/motor_black.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -89,7 +90,8 @@ p {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #181618;
+            /* background-color: #181618; */
+            background-color: black;
     overflow: hidden;
 }
 
@@ -106,10 +108,11 @@ p {
     background-position: center;
     display: flex;
     padding-top: 25rem;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color:#181618;
+            /* background-color: #181618; */
+            background-color: black;
     overflow: hidden;
     padding-top: 0px;
 }
@@ -136,7 +139,8 @@ p {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
-    background-color: rgb(24, 24, 24);
+            /* background-color: #181618; */
+            background-color: black;
     overflow: hidden;
 }
 

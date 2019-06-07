@@ -150,18 +150,26 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(253, 187, 45, 0) 100%);
 }
 
 .hyperloop_animation {
     width: 32%;
     margin-left: 200%;
     animation: hyperloop 6s infinite;
+    
 }
 
 .hyperloop_buis {
     z-index: 100;
     width: 100%;
     position: absolute;
+}
+
+.gras {
+    margin-top: 5%;
+    height: 30px;
+    background: rgb(0, 0, 0);
 }
 
 @keyframes hyperloop {

@@ -85,6 +85,7 @@ p {
 }
 
 .section_one {
+    align-content: center;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -102,7 +103,7 @@ p {
 
 .section_three {
     height: 100vh;
-    background-image: url('images/gradient.png'), url('images/train_old.jpg');
+    background-image: url('images/train_old.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -134,9 +135,11 @@ p {
 }
 
 .section_two {
+    overflow: hidden;
     min-height: 100vh;
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
             /* background-color: #181618; */
@@ -160,7 +163,7 @@ p {
 .hyperloop_animation {
     width: 32%;
     margin-left: 200%;
-    animation: hyperloop 6s infinite;
+    animation: hyperloop 5s infinite;
     
 }
 
@@ -194,6 +197,11 @@ p {
 }
 
 }
+
+.section_alinea {
+    display: flex;
+    justify-content: center;
+}
 @media only screen and (max-width: 650px) {
     .intro_left,
     .intro_right {
@@ -203,5 +211,17 @@ p {
     .logo img {
         width: auto;
         margin: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .section_one img {
+        width: 90%;
+    }
+
+    .section_two img {
+        width: 90%;
     }
 }

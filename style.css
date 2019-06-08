@@ -9,11 +9,6 @@ body {
         background-color: black;
 }
 
-/* img {
-    height: 100%;
-    width: auto;
-} */
-
 .logo {
     position: fixed;
     z-index: 1000;
@@ -84,9 +79,102 @@ p {
     margin-right: 10px;
 }
 
+.section_map {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(4, 40, 51) 56%, rgba(0, 0, 0, 1) 100%);
+    ;
+}
+
+
+#los_angeles {
+    transition: 300ms;
+}
+
+#los_angeles:hover {
+    transform: translate(689px, 706px) !important;
+    animation: la 2s infinite;
+    transition: 300ms;
+    animation-delay: 500ms;
+}
+
+@keyframes la {
+    20% {
+        transform: translate(689px, 706px)
+    }
+
+        40% {
+            transform: translate(689px, 686px)
+        }
+}
+
+#san_jose {
+    transition: 300ms;
+    
+}
+
+#san_jose:hover {
+    transform: translate(149px, 200px) !important;
+    animation: sj 2s infinite;
+    transition: 300ms;
+    animation-delay: 500ms;
+}
+
+@keyframes sj {
+    20% {
+        transform: translate(149px, 200px)
+    }
+
+    40% {
+        transform: translate(149px, 187px)
+    }
+}
+
+#musk_een {
+    width: 30%;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 5rem;
+    display: none;
+    transition: 300ms;
+    opacity: 0;
+}
+
+#musk_twee {
+    width: 30%;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 5rem;
+    display: none;
+    transition: 300ms;
+    opacity: 0;
+    
+}
+
+.mapfoto {
+    opacity: 1 !important;
+    display: flex !important;
+    z-index: 20;
+}
+
+.map_title {
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 18%;
+    z-index: 1;
+}
+
 .section_one {
     align-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -202,6 +290,16 @@ p {
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (max-width: 1400px) {
+    .map_title {
+        position: relative;
+        display: flex; 
+        margin-right: 15%;
+        margin-bottom: -24em;
+    }
+}
+
 @media only screen and (max-width: 650px) {
     .intro_left,
     .intro_right {
@@ -212,6 +310,21 @@ p {
         width: auto;
         margin: 2rem;
     }
+
+    .svg1 {
+        height: 600px;
+    }
+
+        .map_title {
+            margin-bottom: -18em;
+            margin-right: 2rem;
+        }
+
+        #musk_een, #musk_twee {
+            width: 50%;
+            opacity: 0.8 !important;
+            padding-bottom: 80px;
+        }
 }
 
 
